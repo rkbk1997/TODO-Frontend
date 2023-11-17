@@ -1,0 +1,30 @@
+<div class="create-todo">
+  <div class="dialog-header">
+    <h1>Create</h1>
+  </div>
+  <div class="dialog-body" [formGroup]="form">
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Title" formControlName="title" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Discription</mat-label>
+      <input matInput placeholder="Discription" formControlName="discription" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status" required>
+        <mat-option value="todo">TODO</mat-option>
+        <mat-option value="in progress">In Progress</mat-option>
+        <mat-option value="done">Done</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="dialog-action">
+    <button mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="onSave()" [disabled]="!form.valid">Save</button>
+    </div>
+  </div>
+</div>

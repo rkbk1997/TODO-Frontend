@@ -1,0 +1,19 @@
+.todo-main {
+  background-color: #eeee;
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+
+  .todo-list {
+    padding: 0 12px;
+  }
+}

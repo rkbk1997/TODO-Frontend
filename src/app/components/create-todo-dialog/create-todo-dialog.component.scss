@@ -1,0 +1,15 @@
+.create-todo {
+  padding: 20px;
+
+  .dialog-body {
+    .mat-mdc-form-field {
+      width: 100% !important;
+    }
+    .dialog-action {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+  }
+
+}

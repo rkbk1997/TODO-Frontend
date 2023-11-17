@@ -5,6 +5,13 @@
     display: flex;
     justify-content: center;
     padding: 12px 0;
+
+    h1 {
+      background-color: #4758B8;
+      padding: 6px 20px;
+      color: #fff;
+      border-radius: 6px;
+    }
   }
 
   .filter-section {

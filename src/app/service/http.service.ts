@@ -24,4 +24,9 @@ export class HttpService {
     const url = `${this.url}/api/delete`
     return this.http.post(url, {id});
   }
+
+  getAllListByStatus(status: any) {
+    const url = `${this.url}/api/findByStatus`
+    return this.http.post(url, {status});
+  }
 }

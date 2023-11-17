@@ -60,4 +60,17 @@ export class AppComponent implements OnInit {
       }
     )
   }
+
+  onChange(event: any) {
+    console.log('event', event)
+    this.httpService.getAllListByStatus(event.value).subscribe(
+      (res: any) => {
+        if(res) {
+          this.dataSource = new MatTableDataSource(res)
+        }
+      }, err => {
+        alert(err.message);
+      }
+    )
+  }
 }
